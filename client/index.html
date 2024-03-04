@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostgresTest</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h2>Create Movie Entry</h2>
+  <form id="movie-data">
+    <input name="name" placeholder="name" />
+    <input name="description" placeholder="description" />
+    <input name="price" placeholder="price" />
+    <label>
+      tags: <textarea name="tags">tag1, tag2</textarea> 
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>Movies</h2>
+  <button id="get-movies">Get</button>
+  <div id="movies"></div>
+  <h2>Delete movies by name</h2>
+  <input placeholder="movie name" id="delete-text"/>
+  <button id="delete">
+    DELETE
+  </button>
+
+  <style>
+    #movie-data {
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }  
+  </style>
+</body>
+</html>
